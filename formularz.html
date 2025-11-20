@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html lang="pl-PL">
+<head> 
+	<title> Strona Wojciecha - Projektowanie Stron Internetowych </title>
+	<meta charset="UTF-8"/>
+</head>
+<body>
+	<div style="background-color:gray;">
+		<h1> <center> Projektowanie Stron Internetowych - Wojciech Sławiński </h1> </center>
+	</div>
+	<div style="float:left; background-color:aqua; width:30%; height: 850px;">
+		<h3> HTML </h3>
+			<a href="index.html"> STRONA GŁÓWNA </a> <br />
+			<a href="kolory.html"> KOLORY </a> <br />
+			<a href="nauczyciele.html"> NAUCZYCIELE </a> <br />
+			<a href="zdjecia.html"> ZDJĘCIA </a> <br />
+			<a href="tabele.html"> TABELA </a> <br />
+			<a href="slawinski_tabela.html"> TABELA NA OCENE </a> <br />
+			<a href="lista.html"> LISTY </a> <br />
+			<a href="slawinski_lista.html"> LISTY NA OCENE </a> <br />
+			<a href="formularz.html"> FORMULARZE </a> <br />
+			<a href="slawinski_formularze.html"> FORMULARZ NA OCENE </a> <br />
+			<a href="zdarzenia.html"> ZDARZENIA </a> <br />
+			<a href="canvas.html"> CANVAS </a> <br />
+			<a href="mapy_odsyłaczy.html"> MAPY ODSYŁACZY </a> <br />
+		<h3> MULTI </h3>
+			<a href="audio_video.html"> AUDIO I WIDEO </a> <br />
+	</div>
+	<div style="float:right; width:70%;">
+		<form>
+		<p> Imie I Nazwisko: <input type="text" name="imie_i_nazwisko" size="15" /> </p>
+		<p> Adres E-Mail: <input type="text" name="email" value="Wpisz E-Mail" /> </p>
+		<p> Hasło: <input type="password" id="haslo" /> </p>
+		<p> Płeć: <br />
+			<input type="radio" name="plec" value="mezczyzna" /> MĘŻCZYZNA <br />
+			<input type="radio" name="plec" value="kobieta" checked /> KOBIETA </p>
+		<p> <label for="male"> mężczyzna </label>
+			<input type="radio" name="gender" id="male" value="mezczyzna" /> <br />
+		<label for="female"> kobieta </label>
+			<input type="radio" name="gender" id="female" value="kobieta" /><br />
+		<fieldset>
+		<p> Języki Którymi Władam: <br />
+			<p><input type="checkbox" name="nazwa_jezyki" id="wartosc_angielski" checked/> ANG </p>
+			<p><input type="checkbox" name="nazwa_jezyki" id="wartosc_nimiecki"/> NIE </p>
+			<p><input type="checkbox" name="nazwa_jezyki" id="wartosc_chinski"/> CHIN </p>
+		</fieldset>
+		</p>
+		<select multiple>
+			<optgroup label="ULUBIONE OWOCE">
+				<option value="truskawki"> TRUSKAWKI </option>
+				<option value="banany"> BANANY </option>
+				<option value="maliny"> MALINY </option>
+			</optgroup>
+		</select> <br />
+		<input type="text"><input type="button" value="Prześlij"></input></input><br />
+		<select multiple>
+			<optgroup label="DNI WOLNE">
+				<option value="sobota"> SOBOTA </option>
+				<option value="niedziela"> NIEDZIELA </option>
+			</optgroup>
+			<optgroup label="DNI ROBOCZE">
+				<option value="poniedziałek"> PONIEDZIAŁEK </option>
+				<option value="wtorek"> WTOREK </option>
+				<option value="sroda"> ŚRODA </option>
+				<option value="czwartek"> CZWARTEK </option>
+				<option value="piatek"> PIĄTEK </option>
+			</optgroup>
+		</select><br />
+		<textarea cols="40" rows="5"></textarea><br />
+		<textarea cols="40" rows="5"> Wprowadź swój adres </textarea><br />
+		<p><input type="reset" value="RESET"> - Przycisk Resetowania </p></input><br/>
+		<p><input type="button" value="Opuść stronę!"> - input </p></input><br />
+		<p><input type="button" value="Kupuj Teraz!" onclick="alert('Zakupiono')"> - button </p></input><br />
+		<p><input type="file" value="Wybierz Plik"> - input </p></input><br />
+		<fieldset>
+		<p>WYKSZTAŁCENIE:<br />
+			<p><input type="radio" value="podstawowe"> PODSTAWOWE -skrót alt+p </p></input>
+			<p><input type="radio" value="srednie"> ŚREDNIE -skrót alt+s </p></input>
+			<p><input type="radio" value="wyzsze"> WYŻSZE -skrót alt+w </p></input>
+		</p></fieldset><br />
+			<input type="image" type="reset" src="foty/gekon.jpg" width="500"></input><br />
+			<p> PRZYCISK PRZESYŁANIA I CZYSZCZENIA PÓL </p><br />
+		<input type="button" value="wyślij"> - PRZYCISK PRZESYŁANIA -input </input><br />
+		<input type="reset" value="wyczysc"> - PRZYCISK RESETOWANIA </input><br />
+		<p>PRZYCISKI BUTTON</p>
+			<input type="button" value="Wyślij!"></input><br />
+			<input type="button" value="Usuń"></input><br />
+			<input type="color"></input><br />
+			<p>DO BUTTONU MOŻNA WSTAWIĆ OBRAZEK</p>
+				<button type="button"><img src="foty/gekon.jpg" width="500" /></button><br />
+			<p>USPRAWNIENIA W FORMULARZACH</p>
+				<p>Atrybut autofocus automatycznie ustawia kursor w wybranym polu formularza <input type="text"></p></input><br />
+				<p>Atrybut autocomplete [on bądź off] służy do wyliczenia lub wliczenia autouzupełnienia <input type="text"></p></input><br />
+				<p>Lista proponowanych wartości wyświetlana, jako lista rozwijalna <input type="text"><input type="button" value="Prześlij"></p></input></input><br />
+			<br />
+			<br />
+			<br />
+			<br />
+				<p>Atrybut sprawdzający wypełnienie pola. Jeżeli pole formularza będzie puste, nie zostanie on zatwierdzony. <input type="text"></p></input><br />
+				<p>TYPY PÓL W HTML5 DO WPROWADZANIA DANYCH: <input type="text" name="email" value="nazwa@gmail.com"> - wprowadzenie adresu e-mail </p></input><br />
+				<p><input type="text"> - wprowadzenie adresu URL </p></input><br />
+				<p><input type="text"> - wprowadzenie liczby całkowitej z podanego przydziału</p></input><br />
+				<p><input type="date" value="2025-11-11"> - do wprowadzania daty
+				<p><input type="color"> - do wprowadzania koloru
+				<br />
+				<br />
+				<p>Lista proponowanych wartości wyświetlana jako lista rozwijalna <input type="text"><input type="button" value="Prześlij"></p></input><br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<p>Element wyjściowy przedstawia wynik obliczenia</p>
+					0
+					<input type="range" id="a" name="a" value="50" min="0" max="100">
+					100 +
+					<input type="number" id="b" name="b" value="50">
+					<output name="wynik" for="a b">=</output><br />
+					<br />
+					<input type="button" value="Prześlij"></input><br />
+					<br />
+					<br />
+				<p><input type="text" value="ZABLOKOWANE" readonly> - Blokuje Pole - nie da się w nim pisać - disabled</p></input><br />
+		</form>
+	</div>
+	<div style="background-color:grey; clear:both;"><center> &copy; W.S., October 2025 </center></div>
+</body>
+</html>

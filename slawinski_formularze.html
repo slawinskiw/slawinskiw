@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="PL-pl">
+	<meta charset="UTF-8">
+<head><title>sławiński_formularze</title>
+</head>
+<body style="background-color:lightblue;">
+<div style="background-color:gray;">
+		<h1> <center> Projektowanie Stron Internetowych - Wojciech Sławiński </h1> </center>
+	</div>
+	<div style="float:left; background-color:aqua; width:30%; height: 850px;">
+		<h3> HTML </h3>
+			<a href="index.html"> STRONA GŁÓWNA </a> <br />
+			<a href="kolory.html"> KOLORY </a> <br />
+			<a href="nauczyciele.html"> NAUCZYCIELE </a> <br />
+			<a href="zdjecia.html"> ZDJĘCIA </a> <br />
+			<a href="tabele.html"> TABELA </a> <br />
+			<a href="slawinski_tabela.html"> TABELA NA OCENE </a> <br />
+			<a href="lista.html"> LISTY </a> <br />
+			<a href="slawinski_lista.html"> LISTY NA OCENE </a> <br />
+			<a href="formularz.html"> FORMULARZE </a> <br />
+			<a href="slawinski_formularze.html"> FORMULARZ NA OCENE </a> <br />
+			<a href="zdarzenia.html"> ZDARZENIA </a> <br />
+			<a href="canvas.html"> CANVAS </a> <br />
+			<a href="mapy_odsyłaczy.html"> MAPY ODSYŁACZY </a> <br />
+		<h3> MULTI </h3>
+			<a href="audio_video.html"> AUDIO I WIDEO </a> <br />
+	</div>
+	<div style="float:right; width:70%;">
+<form>
+<fieldset>
+	<legend>ADRES</legend><br />
+			<input type="radio" name="typ" value="firmowy"> firmowy </input>
+			<input type="radio" name="typ" value="prywatny"> prywatny </input><br />
+		<p> Nazwa / Nazwisko i Imię <input type="text" value="Poligraf / Kowalski Jan" size="40"></input></p>
+		<p> Ulica i numer budynku <input type="text" size="40"></input></p>
+		<p> Kod pocztowy <input type="number" size="20"></input></p>
+		<p> Miejscowość <input type="text" value="Katowice" size="40"></input></p>
+		<p> Telefon <input type="text" value="+48 601 601 601" size="40"></input></p>
+		<p> E-mail <input type="email" value="info@insert.com" size="40"></input></p>
+</fieldset>
+<fieldset>
+	<legend> Wysyłka </legend>
+		<p> Przesyłka (ekon,prioryt,ekspr) <select name="Przesyłka"></p>
+			<optgroup name="Przesyłka">
+				<option name="Ekonomiczna"> Ekonomiczna
+				<option name="Priorytetowa"> Priorytetowa
+				<option name="Ekspresowa"> Ekspersowa
+			</select></optgroup><br />
+		<p> Waga (g) <input type="number" value="1000" size="20"></input></p>
+		<p> Gabaryt <select name="Gabaryt"></p>
+			<optgroup name="Gabaryt">
+				<option name="S(28x8x64cm)"> S(28x8x64cm)
+				<option name="M(38x19x64cm)"> M(38x19x64cm)
+				<option name="L(41x38x64cm)"> L(41x38x64cm)
+				<option name="XL(60x60x70cm)"> XL(60x60x70cm)
+			</select></optgroup><br />
+		<p> Wartość <input type="text" value="0,00"></input> zł</p>
+		<p> Nr Rachunku <br />
+			<input type="text" value="60 1050 1214 1000 0033 6688 5522" size="40"></input></p>
+		<p> Data Wysyłki <input type="date" value="2023-10-28"></input></p><br />
+		<input type="checkbox"> Z - Żądanie zwrotu/odesłania <br />
+		<input type="checkbox"> P - Polecony <br />
+		<input type="checkbox"> O - Potwierdzenie odbioru <br />
+		<input type="checkbox"> Z - Zadeklarowanie wartości <br />
+		<p> Uwagi <p>
+			<textarea cols="50" rows="6"> Proszę o wpisanie wszelkich uwag. </textarea>
+</fieldset>
+<fieldset>
+	<button type="button" name="Wyślij" value="Wyślij" onclick="alert('Wysłano')"> Wyślij </button>
+	<button type="button" name="Anuluj" value="Anuluj" onclick="alert('Anulowano')"> Anuluj </button>
+</fieldset>
+</form>
+</body>
+</html>

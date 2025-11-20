@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	<title>Zdarzenia</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<div style="background-color:grey">
+		<h1><center>Projektowanie Stron Internetowych - Wojciech Sławiński</center></h1>
+	</div>
+	<div style="float:left; width:30%; height: 850px; background-color:aqua;">
+		<h3>HTML</h3>
+			<a href="index.html">STRONA GŁÓWNA</a><br />
+			<a href="kolory.html">KOLORY</a><br />
+			<a href="nauczyciele.html">NAUCZYCIELE</a><br />
+			<a href="zdjecia.html">ZDJECIA</a><br />
+			<a href="tabele.html">TABELA</a><br />
+			<a href="slawinski_tabela.html">TABELA NA OCENE</a><br />
+			<a href="lista.html">LISTY</a><br />
+			<a href="slawinski_lista.html">LISTY NA OCENE</a><br />
+			<a href="formularz.html"> FORMULARZE </a> <br />
+			<a href="slawinski_formularze.html"> FORMULARZ NA OCENE </a> <br />
+			<a href="zdarzenia.html"> ZDARZENIA </a> <br />
+			<a href="canvas.html"> CANVAS </a> <br />
+			<a href="mapy_odsylaczy.html">MAPY ODSYŁACZY</a><br />
+		<h3> MULTI </h3>
+			<a href="audio_video.html"> AUDIO I WIDEO </a> <br />
+	</div>
+<h2>Zdarzenie onfocus oraz onblur</h2>
+
+<p>Po "wejściu" do pola input, funkcja ustawia kolor tła na żółty.</p>
+<p>Po opuszceniu pola input, funkcja ustawia kolor tła na czerwony.</p>
+<br />
+<br />
+Wojciech Sławiński
+<input type="text" id="myInput" onfocus="focusFunction()" onblur="blurFunction()">
+
+<script>
+function focusFunction() {
+	document.getElementById("myInput").style.background = "yellow";
+}
+
+function blurFunction() {
+	document.getElementById("myInput").style.background = "red";
+}
+</script>
+	<div style="background-color:grey; clear:both;"><center>&copy; W.S. OCTOBER 2025
+	</center></div>
+</body>
+</html>
