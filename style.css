@@ -1,0 +1,40 @@
+				a:link, a:visited {
+							color:black;
+							background:yellow;
+							border:1px double black;
+							border-radius:5px;
+							text-decoration:none;
+							padding:5px;
+							background-clip:content-box;
+							width:200px;
+							display:inline-block;
+				}
+				a:active {
+							color:white;
+							text-decoration:none;
+							background:red;
+							border:1px dashed;
+							border:solid 1px;
+							background-clip:content-box;
+							border-style:dashed;
+							border-color:white;
+							padding:5px;
+							width:200px;
+							display:inline-block;
+							}
+				a:hover {
+							color:aqua;
+							background:green;
+							border:1px solid;
+							border-bottom-color:black;
+							border-left-color:white;
+							border-top-color:white;
+							border-right-color:black;
+							background-clip:text;
+							border-radius:5px;
+							text-decoration:none;
+							padding:5px;
+							background-clip:content-box;
+							width:200px;
+							display:inline-block;
+				}
