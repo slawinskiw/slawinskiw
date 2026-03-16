@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+
+<html lang="pl-PL">
+<link rel="stylesheet" type="text/css" href="style.css">
+<head> 
+	<title> WŁAŚCIWOŚCI CSS - TABELE </title>
+	<style type="text/css">
+	
+		table.jeden, tr.jeden {
+				border-collapse: collapse;
+				border: 1px solid blue;
+				table-layout: fixed;
+				width: 50%;
+				}
+		table.one {
+				width: 80%;
+				border-collapse: collapse;
+				}
+		th.one {
+				border: 3px solid red;
+				padding: 10px;
+				text-transform: uppercase;
+				background-color: lightblue;
+				}
+		td.one {
+				border: 2px solid lightgreen;
+				padding: 10px;
+				background-color: yellow;
+				empty-cells: show;
+				}
+		table.dwa {
+				border-top: 1px solid aqua;
+				border-collapse: collapse;
+				width: 80%
+				}
+		tr.dwa:hover {
+				background-color: aqua;
+				padding: 8px;
+				border-top: 1px solid aqua;
+				}
+		table.trzy {
+				border-collapse: collapse;
+				width: 80%
+				}
+		tr.trzy:hover {
+				padding: 8px;
+				}
+		tr.trzy:nth-child(even):hover {
+				background-color: fuchsia;
+				}
+		tr.trzy:nth-child(odd):hover {
+				background-color: grey;
+				}
+		table.three {
+				border-collapse: collapse;
+		    	width: 80%;
+
+		    			}
+
+		    th.three,td.three {
+
+		    					border-bottom: red dotted 2px;
+		    					padding: 8px;
+
+		    				  }
+
+		    th.three:hover {
+
+		    				background-color: cyan;
+
+		    			   }
+
+		    th.three:nth-child(odd):hover {
+
+		    				background-color: yellow;
+
+		    			   }
+
+		    td.three:hover {
+
+		    				background-color: silver;
+
+		    			   }
+
+		    td.three:nth-child(odd):hover {
+
+		    				background-color: purple;
+
+		    			   round-color: fuchsia;
+				}
+			table.cztery {
+					border: 1px solid black;
+					}
+			th.cztery {
+					color: red;
+					background-color: yellow;
+					}
+			td.cztery {
+					background-color: white;
+					}
+			table.piec {
+					border-spacing: 2px;
+					}
+			table.piec th {
+					border: 1px solid black;
+					}
+			table.piec td {
+					border: 1px solid black;
+					}
+			table.noc, table.noc * {
+					border-spacing: 10px;
+					border: 3px outset maroon;
+					empty-cells: hide;
+					}
+			table.noc th {
+					background-color: pink;
+					border: inset 3pt;
+					}
+			table.pink, table.pink * {
+					empty-cells: show;
+					}
+			table.pink th {
+					border: 1px inset;
+					background-color: pink;
+					color: fuchsia;
+					}
+			table.pink td {
+					border: 1px inset black;
+					empty-cells: show;
+					}
+			table.noc2, table.noc2 * {
+					border: 1px inset aqua;
+					background-color: black;
+					color: white;
+					}
+			th.noc2 {
+					background-color: aqua;
+					color: navy;
+					}
+			caption.noc2 {
+					caption-side: left;
+					margin-right: 350px;
+					valign: center;
+					}
+			table.cos, table.cos * {
+					border: 1px inset red;
+					color: white;
+					background-color: navy;
+					}
+			th.cos {
+					background-color: red;
+					color: white;
+					}
+			table.cos2, table.cos2 *{
+					border: 1px solid aqua;
+					background-color: navy;
+					color: white;
+					}
+			th.cos2 {
+					background-color: lightgreen;
+					}
+			td.cos2 {
+					background-color: blue;
+					}
+</style></head>
+<body bgcolor="lightgrey">
+	<div style="background-color:grey">
+		<h1><center>Projektowanie Stron Internetowych - Wojciech Sławiński</center></h1>
+	</div>
+	<div style="float:left; width:30%; height: 6500px; background-color:aqua;">
+		<h3>HTML</h3>
+			<a href="index.html">STRONA GŁÓWNA</a><br /><br /><br />
+			<a href="kolory.html">KOLORY</a><br /><br /><br />
+			<a href="nauczyciele.html">NAUCZYCIELE</a><br /><br />
+			<a href="zdjecia.html">ZDJECIA</a><br /><br /><br />
+			<a href="tabele.html">TABELA</a><br /><br /><br />
+			<a href="slawinski_tabela.html">TABELA NA OCENE</a><br /><br />
+			<a href="lista.html">LISTY</a><br /><br /><br />
+			<a href="slawinski_lista.html">LISTY NA OCENE</a><br /><br />
+			<a href="formularz.html"> FORMULARZE </a> <br /><br />
+			<a href="slawinski_formularze.html"> FORMULARZ NA OCENE </a> <br /><br />
+			<a href="zdarzenia.html"> ZDARZENIA </a> <br /><br />
+			<a href="canvas.html"> CANVAS </a> <br /><br />
+			<a href="mapy_odsylaczy.html">MAPY ODSYŁACZY</a><br /><br />
+		<h3> MULTI </h3>
+			<a href="audio_video.html"> AUDIO I WIDEO </a> <br /><br />
+		<h3> CSS </h3>
+			<a href="wlasciwosci_css.html"> WŁAŚCIWOŚCI CSS </a> <br /><br />
+			<a href="tabela_css.html"> TABELA CSS </a> <br /><br />
+		<h3> DOKUMENTY </h3>
+			<a href="doc/lista.docx"> WORD - lista grupy </a> <br /><br />
+			<a href="doc/lista.xlsx"> EXCEL - lista grupy </a> <br /><br />
+		<h3> LINKI </h3>
+			<a href="https://www.google.pl" target="new">
+				<img src="foty/google.jpg" width="150"></a> <br /><br />
+			<a href="https://www.tsi-pai.cba.pl" target="new">
+				<img src="foty/tsi-pai.png" width="200"></a> <br /><br />
+	</div>
+	<div style="float:right; width:70%; ">
+	<br />
+		<hr />
+	<h3> Zadanie I </h3>
+		<hr />
+		<table class="jeden">
+			<tr>
+				<td class="jeden"> komórka 1-1 </td>
+				<td class="jeden"> komórka 1-2 </td>
+				<td class="jeden"> komórka 1-3 </td>
+			</tr>
+			<tr>
+				<td class="jeden"> komórka 2-1 </td>
+				<td class="jeden"> komórka 2-2 </td>
+				<td class="jeden"> komórka 2-3 </td>
+			</tr>
+			<tr>
+				<td class="jeden"> komórka 3-1 </td>
+				<td class="jeden"> komórka 3-2 </td>
+				<td class="jeden"> komórka 3-3 </td>
+			</tr>
+		</table>
+		<br />
+		<hr />
+	<h3> Zadanie II </h3>
+		<hr />
+		<table class="one">
+			<tr>
+				<th class="one"> NR </th>
+				<th class="one"> NAZWISKO I IMIE </th>
+				<th class="one"> OBECNOSC </th>
+			</tr>
+			<tr>
+				<td class="one"> 1 </td>
+				<td class="one"> Anna Nowak </td>
+				<td class="one"> Tak </td>
+			</tr>
+			<tr>
+				<td class="one"> 2 </td>
+				<td class="one"> Jan Kowalski </td>
+				<td class="one"> Tak </td>
+			</tr>
+			<tr>
+				<td class="one"> 3 </td>
+				<td class="one"> Krzysztof Kwiatowski </td>
+				<td class="one"> Tak </td>
+			</tr>
+			<tr>
+				<td class="one"> 4 </td>
+				<td class="one"> Filip </td>
+				<td class="one"></td>
+			</tr>
+			<tr>
+				<td class="one"> 5 </td>
+				<td class="one"> Maja </td>
+			</tr>
+		</table>
+	<br />
+		<hr />
+	<h3> Zadanie III </h3>
+		<hr />
+		<table class="dwa">
+			<tr class="dwa">
+				<th> Pierwsze Imię </th>
+				<th> Nazwisko </th>
+				<th> Zarobek na godz. </th>
+			</tr>
+			<tr class="dwa">
+				<td> Peter </td>
+				<td> Griffin </td>
+				<td> $100 </td>
+			</tr>
+			<tr class="dwa">
+				<td> Lois </td>
+				<td> Griffin </td>
+				<td> $150 </td>
+			</tr>
+			<tr class="dwa">
+				<td> Joe </td>
+				<td> Swanson </td>
+				<td> $300 </td>
+			</tr>
+			<tr class="dwa">
+				<td> Cleveland </td>
+				<td> Brown </td>
+				<td> $250 </td>
+			</tr>
+		</table>
+		<br />
+		<hr />
+	<h3> Zadanie IV </h3>
+		<hr />
+		<table class="trzy">
+			<tr class="trzy">
+				<th> Pierwsze Imię </th>
+				<th> Nazwisko </th>
+				<th> Zarobek na godz. </th>
+			</tr>
+			<tr class="trzy">
+				<td> Peter </td>
+				<td> Griffin </td>
+				<td> $100 </td>
+			</tr>
+			<tr class="trzy">
+				<td> Lois </td>
+				<td> Griffin </td>
+				<td> $150 </td>
+			</tr>
+			<tr class="trzy">
+				<td> Joe </td>
+				<td> Swanson </td>
+				<td> $300 </td>
+			</tr>
+			<tr class="trzy">
+				<td> Cleveland </td>
+				<td> Brown </td>
+				<td> $250 </td>
+			</tr>
+		</table>
+		<br />
+		<hr />
+	<h3> Zadanie V </h3>
+		<hr />
+		<table class="three">
+				
+				<tr class="three">
+					<th class="three">Pierwsze Imię</th>
+					<th class="three">Nazwisko</th>
+					<th class="three">Zarobek na godz.</th>
+				</tr>
+
+				<tr class="three">
+					<td class="three">Peter</td>
+					<td class="three">Griffin</td>
+					<td class="three">$100</td>
+				</tr>
+
+				<tr class="three">
+					<td class="three">Lois</td>
+					<td class="three">Griffin</td>
+					<td class="three">$150</td>
+				</tr>
+
+				<tr class="three">
+					<td class="three">Joe</td>
+					<td class="three">Swanson</td>
+					<td class="three">$300</td>
+				</tr>
+
+				<tr class="three">
+					<td class="three">Cleveland</td>
+					<td class="three">Brown</td>
+					<td class="three">$250</td>
+				</tr>
+		</table>
+		<br />
+		<hr />
+	<h3> Zadanie VI </h3>
+		<hr />
+		<table class="cztery" width="50%">
+			<tr>
+				<th class="cztery"> 1 </th>
+				<th class="cztery"> 2 </th>
+			</tr>
+			<tr>
+				<td class="cztery"> a </td>
+				<td class="cztery"> b </td>
+			</tr>
+		</table>
+		<br />
+		<hr />
+		<br />
+		<table class="piec" width="50%">
+			<tr>
+				<th class="cztery"> I </th>
+				<th class="cztery"> II </th>
+			</tr>
+			<tr>
+				<td class="cztery"> i </td>
+				<td class="cztery"> ii </td>
+			</tr>
+		</table>
+		<br />
+		<hr />
+	<h3> Zadanie VII </h3>
+		<hr />
+		<table class="noc">
+			<tr>
+				<th class="noc"> Pracownik </th>
+				<th class="noc"> Data Rozpoczęcia </th>
+				<th class="noc"> Data zakończenia </th>
+				<th class="noc"> Staż </th>
+			</tr>
+			<tr>
+				<td class="noc"> Bartosz R. </td>
+				<td class="noc"> 12/04/2000 </td>
+				<td class="noc"> 02/02/2011 </td>
+				<td class="noc"> 11 lat </td>
+			</tr>
+			<tr>
+				<td class="noc"> Tomasz D </td>
+				<td class="noc"> 07/06/2009 </td>
+				<td class="noc"> do teraz </td>
+			</tr>
+		</table>
+		<br />
+		<hr />
+	<h3> Zadanie VIII </h3>
+		<hr />
+		<table class="pink">
+			<tr>
+				<th class="pink"> Pracownik </th>
+				<th class="pink"> Data Rozpoczęcia </th>
+				<th class="pink"> Data zakończenia </th>
+			</tr>
+			<tr>
+				<td class="pink"> Bartosz R. </td>
+				<td class="pink"> 12/04/2000 </td>
+				<td class="pink"> 02/02/2011 </td>
+			</tr>
+			<tr>
+				<td class="pink"> Tomasz D </td>
+				<td class="pink"> 07/06/2009 </td>
+				<td class="pink"> do teraz </td>
+			</tr>
+			<tr>
+				<td class="pink"> Stefan H </td>
+				<td class="pink"> 11/09/2012 </td>
+				<td class="pink"></td>
+		</table>
+		<br />
+		<hr />
+	<h3> Zadanie IX </h3>
+		<hr />
+		<table class="noc2">
+			<caption class="noc2"> Schemat Kontroli Pracowników </caption>
+			<tr>
+				<th class="noc2"> Pracownik </th>
+				<th class="noc2"> Data Rozpoczęcia </th>
+				<th class="noc2"> Data zakończenia </th>
+			</tr>
+			<tr class="noc2">
+				<td> Bartosz R. </td>
+				<td> 12/04/2000 </td>
+				<td> 02/02/2011 </td>
+			</tr>
+			<tr class="noc2">
+				<td> Tomasz D </td>
+				<td> 07/06/2009 </td>
+				<td> do teraz </td>
+			</tr>
+		</table>
+		<br />
+		<hr />
+	<h3> Zadanie X </h3>
+		<hr />
+		<table class="cos">
+			<tr>
+				<th class="cos"> Pracownik </th>
+				<th class="cos"> Data Rozpoczęcia </th>
+				<th class="cos"> Data Zakończenia </th>
+			</tr>
+			<tr>
+				<td> Rudolf </td>
+				<td> 12/04/2000 </td>
+				<td> 02/02/2011 </td>
+			</tr>
+			<tr>
+				<td> Eryk </td>
+				<td colspan="2" rowspan="2"> <table class="cos2" width="100%">
+						<tr>
+							<th class="cos2"> Pracownik </th>
+							<th class="cos2"> Data Rozpoczęcia </th>
+						</tr>
+						<tr>
+							<td class="cos2"> Adam R. </td>
+							<td class="cos2"> 12/04/2000 </td>
+						</tr>
+						<tr>
+							<td class="cos2"> Tomasz D. </td>
+							<td class="cos2"> 07/06/2009 </td>
+						</tr>
+					</table></td>
+			<tr>
+				<td> Bartosz </td>
+			</tr>
+			<tr>
+				<th class="cos"> Pracownik </th>
+				<th class="cos"> Data Rozpoczęcia </th>
+				<th class="cos"> Data Zakończenia </th>
+			</tr>
+		</table>
+		<br />
+		<hr />
+		<br />
+	</div>
+		<div style="background-color:grey; clear:both;"><center>&copy; W.S. OCTOBER 2025</center>
+	</div>
+	</body>
+	</html>
